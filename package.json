@@ -2,7 +2,7 @@
   "name": "src",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://kekkei9.github.io/Pharma-Track",
+  "homepage": "https://kekkei9.github.io/pharma-track-fe",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
