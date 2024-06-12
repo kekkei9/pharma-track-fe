@@ -60,8 +60,8 @@ const BookApTab1 = (props) => {
     const fetchDoctor = async () => {
       try {
         const [responseClinic, responseStaff] = await Promise.all([
-          Fetch("GET", "https://pharma-track-be.onrender.com//api/v1/clinic/"),
-          Fetch("GET", "https://pharma-track-be.onrender.com//api/v1/staff"),
+          Fetch("GET", "https://pharma-track-be.onrender.com/api/v1/clinic/"),
+          Fetch("GET", "https://pharma-track-be.onrender.com/api/v1/staff"),
         ]);
         const filteredDoctorList = responseStaff.filter((item) => {
           return item.type === "Bác sĩ";

@@ -35,7 +35,7 @@ const BookApTab2 = (props) => {
 
     if (bookingFormRef.current.submitCount === 0) {
       window.open(
-        "https://pharma-track-be.onrender.com//api/v1/payment/create_payment_url1"
+        "https://pharma-track-be.onrender.com/api/v1/payment/create_payment_url1"
       );
     } else {
       navigate("/bookap3", {

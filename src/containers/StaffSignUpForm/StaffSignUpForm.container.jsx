@@ -38,7 +38,7 @@ const StaffSignUpFormContainer = ({
         return false;
       const response = await Fetch(
         "POST",
-        "https://pharma-track-be.onrender.com//api/v1/staff",
+        "https://pharma-track-be.onrender.com/api/v1/staff",
         {
           ...values,
           name: userData.username,
@@ -79,7 +79,7 @@ const StaffSignUpFormContainer = ({
     try {
       const response = await Fetch(
         "POST",
-        "https://pharma-track-be.onrender.com//api/v1/staff",
+        "https://pharma-track-be.onrender.com/api/v1/staff",
         {
           ...values,
           ...{

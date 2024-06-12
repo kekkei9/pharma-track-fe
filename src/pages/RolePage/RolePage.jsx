@@ -64,7 +64,7 @@ const RolePage = (props) => {
       try {
         const response = await Fetch(
           "POST",
-          "https://pharma-track-be.onrender.com//api/v1/clinic",
+          "https://pharma-track-be.onrender.com/api/v1/clinic",
           {
             ...hostFormRef.current.values,
             status_clinic: true,

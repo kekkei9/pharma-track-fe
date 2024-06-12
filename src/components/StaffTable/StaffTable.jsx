@@ -22,7 +22,7 @@ const StaffTable = ({ className, requestData, setRequestData }) => {
       try {
         const response = await Fetch(
           "POST",
-          "https://pharma-track-be.onrender.com//api/v1/staff/staffByClinicID",
+          "https://pharma-track-be.onrender.com/api/v1/staff/staffByClinicID",
           {
             id_clinic: user.id_clinic,
           }
@@ -79,7 +79,7 @@ const StaffTable = ({ className, requestData, setRequestData }) => {
             try {
               const response = await Fetch(
                 "DELETE",
-                "https://pharma-track-be.onrender.com//api/v1/staff",
+                "https://pharma-track-be.onrender.com/api/v1/staff",
                 {
                   id_staff: record.id_staff,
                 }

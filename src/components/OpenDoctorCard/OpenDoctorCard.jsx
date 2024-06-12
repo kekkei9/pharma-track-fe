@@ -13,7 +13,7 @@ const OpenDoctorCard = ({ currentDoctor, time, setTime }) => {
       try {
         const response = await Fetch(
           "POST",
-          "https://pharma-track-be.onrender.com//api/v1/doctortime/getDoctorShifts",
+          "https://pharma-track-be.onrender.com/api/v1/doctortime/getDoctorShifts",
           {
             id_doctortime: "7b8f78f4-b9b8-4c99-8a8d-108035733333",
           }

@@ -54,7 +54,7 @@ const StaffAppointmentTable = (props) => {
       try {
         const response = await Fetch(
           "GET",
-          "https://pharma-track-be.onrender.com//api/v1/appointment/id_clinic",
+          "https://pharma-track-be.onrender.com/api/v1/appointment/id_clinic",
           {
             id_clinic: user.id_clinic,
           }

@@ -22,7 +22,7 @@ const ClinicProfile = (props) => {
       try {
         const response = await Fetch(
           "POST",
-          "https://pharma-track-be.onrender.com//api/v1/clinic/id_clinic",
+          "https://pharma-track-be.onrender.com/api/v1/clinic/id_clinic",
           {
             id_clinic: user.id_clinic,
           }

@@ -34,7 +34,7 @@ const StaffProfilePage = ({ staffId }) => {
           getUidByStaffId(staffId),
           Fetch(
             "POST",
-            "https://pharma-track-be.onrender.com//api/v1/staff/staffByID",
+            "https://pharma-track-be.onrender.com/api/v1/staff/staffByID",
             {
               id_staff: staffId,
             }

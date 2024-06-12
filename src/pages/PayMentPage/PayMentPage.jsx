@@ -23,7 +23,7 @@ const PayMentPage = (props) => {
   // useEffect(()=>{
   //   const fetchData= async() =>{
   //       let response;
-  //       response = await fetch('https://pharma-track-be.onrender.com//api/v1/payment/create_payment_url',{ method:'POST', mode:'cors'} )
+  //       response = await fetch('https://pharma-track-be.onrender.com/api/v1/payment/create_payment_url',{ method:'POST', mode:'cors'} )
   //       console.log(response)
   //       console.log(response.url)
   //       console.log(JSON.stringify(response))
@@ -41,13 +41,13 @@ const PayMentPage = (props) => {
 
   return (
     <div className="App">
-      <a href="https://pharma-track-be.onrender.com//api/v1/payment/create_payment_url1">
+      <a href="https://pharma-track-be.onrender.com/api/v1/payment/create_payment_url1">
         {" "}
         thanh toán
       </a>
       <Button
         type="primary"
-        href="https://pharma-track-be.onrender.com//api/v1/payment/create_payment_url1"
+        href="https://pharma-track-be.onrender.com/api/v1/payment/create_payment_url1"
         shape="default"
         size="large"
       >
