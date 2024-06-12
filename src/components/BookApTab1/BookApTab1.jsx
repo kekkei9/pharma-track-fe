@@ -60,8 +60,8 @@ const BookApTab1 = (props) => {
     const fetchDoctor = async () => {
       try {
         const [responseClinic, responseStaff] = await Promise.all([
-          Fetch("GET", "https://pharma-track.onrender.com/api/v1/clinic/"),
-          Fetch("GET", "https://pharma-track.onrender.com/api/v1/staff"),
+          Fetch("GET", "https://pharma-track-be.onrender.com//api/v1/clinic/"),
+          Fetch("GET", "https://pharma-track-be.onrender.com//api/v1/staff"),
         ]);
         const filteredDoctorList = responseStaff.filter((item) => {
           return item.type === "Bác sĩ";
@@ -341,8 +341,8 @@ const BookApTab1 = (props) => {
                 handleDoubleClickMap={handleDoubleClickMap}
                 currentDoctor={currentDoctor}
                 setCurrentDoctor={setCurrentDoctor}
-                id_staff = {id_staff}
-                setID = {setID}
+                id_staff={id_staff}
+                setID={setID}
               />
               <Modal
                 title="CHI TIẾT BÁC SĨ"

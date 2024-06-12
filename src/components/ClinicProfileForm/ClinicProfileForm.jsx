@@ -122,7 +122,7 @@ const ClinicProfileForm = ({
               onConfirm={async () => {
                 const response = await Fetch(
                   "PUT",
-                  "https://pharma-track.onrender.com/api/v1/clinic",
+                  "https://pharma-track-be.onrender.com//api/v1/clinic",
                   {
                     ...values,
                     status_clinic: false,

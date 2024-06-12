@@ -34,7 +34,7 @@ const AppointmentProfilePage = (props) => {
       try {
         const response = await Fetch(
           "GET",
-          "https://pharma-track.onrender.com/api/v1/appointment/id_appointment",
+          "https://pharma-track-be.onrender.com//api/v1/appointment/id_appointment",
           {
             id_appointment: params.appointmentId,
           }
@@ -60,14 +60,14 @@ const AppointmentProfilePage = (props) => {
             getUserData(appointmentData.id_user),
             Fetch(
               "POST",
-              "https://pharma-track.onrender.com/api/v1/staff/staffByID",
+              "https://pharma-track-be.onrender.com//api/v1/staff/staffByID",
               {
                 id_staff: appointmentData.id_staff,
               }
             ),
             Fetch(
               "POST",
-              "https://pharma-track.onrender.com/api/v1/clinic/id_clinic",
+              "https://pharma-track-be.onrender.com//api/v1/clinic/id_clinic",
               {
                 id_clinic: appointmentData.id_clinic,
               }
