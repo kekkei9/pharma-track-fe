@@ -1,0 +1,71 @@
+.OpenDoctorCard {
+  .carddetail {
+    margin-left: auto;
+    margin-right: auto;
+    .wrap-card {
+      display: flex;
+      align-items: center;
+      .wrap-img {
+        padding: 0px 20px 0 20px;
+      }
+      .introduction {
+        flex-direction: row;
+        padding: 40px 40px 24px 40px;
+        .Name {
+          font-size: 30px;
+          line-height: 36px;
+          font-weight: 700;
+          padding-bottom: 4px;
+        }
+        .line {
+          height: 3px;
+          background-color: #46c2cb;
+          border-radius: 4px;
+        }
+        .information {
+          padding: 8px 16px 8px 16px;
+          font-size: 1rem /* 16px */;
+          line-height: 1.5rem /* 24px */;
+        }
+        .information2 {
+          font-size: 1.25rem /* 20px */;
+          line-height: 1.75rem /* 28px */;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .content {
+      padding-left: 24px;
+      padding-right: 24px;
+      font-size: 1rem /* 16px */;
+      line-height: 1.5rem /* 24px */;
+      .clinic_name {
+        padding-bottom: 4px;
+      }
+    }
+    .line2 {
+      height: 3px;
+      background-color: #46c2cb;
+      border-radius: 4px;
+      margin-left: 12px;
+      margin-right: 12px;
+      margin-top: 0.5rem /* 8px */;
+    }
+    .Time {
+      .pickTime {
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 0.5rem /* 8px */;
+        font-weight: 700;
+        font-size: 1.875rem /* 30px */;
+        line-height: 2.25rem /* 36px */;
+      }
+      .TimeButton {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 48px 16px 48px;
+      }
+    }
+  }
+}

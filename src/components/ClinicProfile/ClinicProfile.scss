@@ -1,0 +1,39 @@
+.ClinicProfile {
+  img {
+    height: fit-content;
+  }
+  .profile-container {
+    height: fit-content;
+    min-height: 529px;
+    max-width: 350px;
+  }
+  .ant-row + .ant-row {
+    margin-top: 0.5rem;
+  }
+
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      max-width: 464px;
+      max-height: 504px;
+    }
+    100% {
+      opacity: 1;
+      max-width: 700px;
+      max-height: 700px;
+    }
+  }
+
+  @keyframes zoomOut {
+    0% {
+      opacity: 0;
+      min-width: 700px;
+      min-height: 700px;
+    }
+    100% {
+      opacity: 1;
+      min-width: 400px;
+      min-height: 392px;
+    }
+  }
+}

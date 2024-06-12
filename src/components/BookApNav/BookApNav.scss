@@ -1,0 +1,10 @@
+.BookApNav {
+  .navbar {
+    background-color: rgba(217, 217, 217, 0.6);
+  }
+  .Boxes {
+    .StepComponent + .StepComponent {
+      border-left: 2px solid rgba(128, 128, 128, 0.6);
+    }
+  }
+}

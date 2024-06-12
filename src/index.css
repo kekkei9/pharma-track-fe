@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ProductSans";
+  src: url("../public/fonts/Product-Sans-Regular.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "ProductSans";
+  src: url("../public/fonts/Product-Sans-Bold.otf") format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProductSans";
+  src: url("../public/fonts/Product-Sans-Italic.otf") format('opentype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ProductSans";
+  src: url("../public/fonts/Product-Sans-Bold-Italic.otf") format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+* {
+  font-family: ProductSans !important;
+}
+
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  background-color: #fff;
+  font-feature-settings: "tnum";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  position: relative;
+  min-height: calc(100vh - 6.25rem);
+  background-color: #eff8fe;
+  margin-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+

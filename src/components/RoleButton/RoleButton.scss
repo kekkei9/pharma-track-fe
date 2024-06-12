@@ -1,0 +1,13 @@
+.RoleButton {
+    margin-top: 50px; 
+    .button1{
+        border-width:2px ;
+        border-color: #d9d9d9;
+        color: #ababab;
+    }
+    .button1:hover{
+        border-color: blue;
+        background-color: white;
+        color: blue;
+    }
+}

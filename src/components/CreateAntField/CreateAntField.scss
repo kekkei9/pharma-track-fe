@@ -1,0 +1,10 @@
+.field-container {
+  .ant-row.ant-form-item-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  label {
+    margin-left: 0.75rem;
+  }
+}

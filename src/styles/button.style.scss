@@ -1,0 +1,115 @@
+.primary-btn {
+  background-color: #9cecfb;
+  padding: 6px 30px;
+  color: white;
+  border-radius: 10px;
+  height: auto;
+  &:hover {
+    color: white !important;
+  }
+}
+
+.default-btn {
+  background-color: white;
+  padding: 6px 30px;
+  border-radius: 10px;
+  color: #20a0d8;
+  border: #9cecfb 2px solid;
+  height: auto;
+  &:hover {
+    color: white !important;
+    background-color: #20a0d8;
+    border-color: none;
+  }
+}
+
+.ant-select-selector {
+  border-radius: 10px !important;
+  padding: 3px 12px !important;
+  height: auto !important;
+}
+
+.ant-input.ant-input-status-success,
+.ant-input-affix-wrapper.ant-input-affix-wrapper-status-error,
+.ant-input-affix-wrapper.ant-input-affix-wrapper-status-success {
+  border-radius: 10px !important;
+  padding: 7px 12px !important;
+}
+
+.ant-input-password.ant-input-affix-wrapper {
+  border-radius: 10px !important;
+  padding: 7px 12px !important;
+  width: 400px;
+}
+
+.ant-input-suffix {
+  > span {
+    display: flex;
+  }
+}
+
+div:has(> .ant-form-item-explain) {
+  > * {
+    height: fit-content !important;
+  }
+}
+
+button[type="submit"] {
+  background-color: rgb(0, 82, 212);
+  padding: 6px 30px;
+  color: white;
+  border-radius: 10px;
+  height: auto;
+  &:hover {
+    color: white !important;
+    background-color: rgb(0, 82, 212);
+  }
+}
+
+.submit-container {
+  .ant-form-item {
+    margin: 0;
+  }
+  margin-top: 0.75rem;
+}
+.ant-form-item {
+  margin: 0;
+}
+
+.ant-dropdown.ant-dropdown-show-arrow.ant-dropdown-placement-bottomRight {
+  z-index: 10000 !important;
+}
+
+button.ant-btn.ant-btn-default,
+button.ant-btn.ant-btn-primary {
+  padding: 1.25rem 1rem;
+  height: 44px;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button.ant-btn.ant-btn-primary.QR-btn {
+  background-color: rgb(1, 122, 255) !important;
+}
+
+button.ant-btn-background-ghost.ant-btn-dangerous {
+  padding: 1.25rem 1rem;
+}
+
+.ant-popover-content .ant-popconfirm-buttons {
+  display: flex;
+  button.ant-btn.ant-btn-primary {
+    background-color: black !important;
+  }
+}
+
+.ant-modal-content .ant-modal-footer {
+  display: flex;
+  justify-content: center;
+  button.ant-btn.ant-btn-primary {
+    background-color: black !important;
+  }
+}
