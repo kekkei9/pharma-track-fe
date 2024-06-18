@@ -10,10 +10,10 @@ import store from './redux/store'
 import AppRouter from './routers/AppRouter'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-ERROR
 function App() {
   return (
     <HashRouter>
+    RYHGOHOSAHOAHOGIHSOGHSOIHGOISEGHIEUHGIHGUIEHGHEWAHGEWAIUH
       <Provider store={store}>
         <Suspense fallback="loading">
           <Header />
