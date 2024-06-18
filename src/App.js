@@ -10,14 +10,12 @@ import store from './redux/store'
 import AppRouter from './routers/AppRouter'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-ERROR-REQUIRED
 function App() {
   return (
     <HashRouter>
       <Provider store={store}>
         <Suspense fallback="loading">
           <Header />
-    ERROR-REQUIRED2
             <AppRouter />
           <Footer/>
         </Suspense>
