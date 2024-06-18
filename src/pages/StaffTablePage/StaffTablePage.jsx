@@ -1,13 +1,12 @@
-import React, { useRef } from "react";
-import { useNavigate } from "react-router-dom";
-import "./StaffTablePage.scss";
-import StaffTable from "../../components/StaffTable/StaffTable";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faRotateRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Modal } from "antd";
-import { useState } from "react";
-import StaffSignUpFormContainer from "../../containers/StaffSignUpForm/StaffSignUpForm.container";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import StaffTable from "../../components/StaffTable/StaffTable";
+import StaffSignUpFormContainer from "../../containers/StaffSignUpForm/StaffSignUpForm.container";
+import "./StaffTablePage.scss";
 
 const StaffTablePage = (props) => {
   const navigate = useNavigate();
