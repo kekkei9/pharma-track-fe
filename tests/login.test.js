@@ -20,7 +20,7 @@ describe("Login", () => {
   });
 
   it("should display the login form", async () => {
-    await page.goto("http://localhost:3000/pharma-track-fe#/login");
+    await page.goto("https://kekkei9.github.io/pharma-track-fe/#/login");
     await page.waitForSelector(
       "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div.submit-container > div > div > div > div > div > button"
     );
@@ -32,7 +32,7 @@ describe("Login", () => {
   }, 10000);
 
   it("should allow the user to log in", async () => {
-    await page.goto("http://localhost:3000/pharma-track-fe#/login");
+    await page.goto("https://kekkei9.github.io/pharma-track-fe/#/login");
     await page.waitForSelector(
       "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div:nth-child(1) > div > div > div.ant-col.ant-form-item-control.css-dev-only-do-not-override-3rel02 > div.ant-form-item-control-input > div > input"
     );
