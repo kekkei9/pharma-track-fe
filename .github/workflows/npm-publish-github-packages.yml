@@ -41,11 +41,9 @@ jobs:
         publish_dir: ./build # directory to deploy
 
     - name: Wait for deployment
-      uses: RoyalHaskoningDHV/wait-for-deployment-action@v3.1
-      id: deployment
+      uses: jakejarvis/wait-action@master
       with:
-        token: ${{ github.token }}
-        environment: Preview
+        time: '60s'
         
     - name: Test
       run: npm run test
