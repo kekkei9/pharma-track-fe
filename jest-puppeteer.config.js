@@ -1,6 +1,6 @@
 module.exports = {
   launch: {
-    headless: process.env.HEADLESS !== "false",
+    headless: true,
     slowMo: process.env.SLOWMO ? parseInt(process.env.SLOWMO, 10) : 0,
     devtools: process.env.DEVTOOLS === "true",
     product: "chrome",
