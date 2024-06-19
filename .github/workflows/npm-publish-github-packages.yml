@@ -46,7 +46,7 @@ jobs:
         token: ${{ github.token }}
         environment: Preview
 
-    - run: echo "Deployed to: ${{ steps.deployment.outputs.url }}"
+    - run: echo "Deployed to:${{steps.deployment.outputs.url}}"
 
     - name: Test
       run: npm run test
