@@ -44,6 +44,11 @@ jobs:
       uses: jakejarvis/wait-action@master
       with:
         time: '60s'
+
+    - name: Install puppeteer libraries
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libgbm1
         
     - name: Test
       run: npm run test
