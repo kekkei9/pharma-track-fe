@@ -41,10 +41,11 @@ jobs:
         publish_dir: ./build # directory to deploy
 
     - name: Wait for deployment
-      uses: wbeuil/wait-for-deployment@v1.0.0
+      uses: RoyalHaskoningDHV/wait-for-deployment-action@v3.1
       id: deployment
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ github.token }}
+        environment: Preview
         
     - name: Test
       run: npm run test
