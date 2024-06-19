@@ -54,5 +54,5 @@ describe("Login", () => {
       (e) => e.innerHTML
     );
     expect(pageTitle).toMatch("Quên mật khẩu");
-  }, 40000);
+  }, 20000);
 });
