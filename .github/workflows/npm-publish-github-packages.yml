@@ -30,9 +30,7 @@ jobs:
           cmd: --frozen-lockfile install
 
     - name: Build
-      uses: borales/actions-yarn@v4
-      with:
-          cmd: build
+      run: CI=false npm run build
 
     - name: Deploy
       run: |
