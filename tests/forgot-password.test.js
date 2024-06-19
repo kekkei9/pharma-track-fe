@@ -23,7 +23,7 @@ describe("Login", () => {
     "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div.tw-text-red-500.tw-mt-3.tw-ml-3.tw-self-start.forgot-password";
 
   let emailInputSelector =
-    "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > form > div.field-container > div > div > div.ant-col.ant-form-item-control.css-3rel02 > div.ant-form-item-control-input > div > input";
+    "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > form > div.field-container > div > div > div.ant-col.ant-form-item-control > div.ant-form-item-control-input > div > input";
 
   it("should display forgot password button", async () => {
     await page.goto("https://kekkei9.github.io/pharma-track-fe/#/login");

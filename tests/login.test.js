@@ -34,14 +34,14 @@ describe("Login", () => {
   it("should allow the user to log in", async () => {
     await page.goto("https://kekkei9.github.io/pharma-track-fe/#/login");
     await page.waitForSelector(
-      "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div:nth-child(1) > div > div > div.ant-col.ant-form-item-control.css-3rel02 > div.ant-form-item-control-input > div > input"
+      "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div:nth-child(1) > div > div > div.ant-col.ant-form-item-control > div.ant-form-item-control-input > div > input"
     );
     await page.type(
-      "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div:nth-child(1) > div > div > div.ant-col.ant-form-item-control.css-3rel02 > div.ant-form-item-control-input > div > input",
+      "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div:nth-child(1) > div > div > div.ant-col.ant-form-item-control > div.ant-form-item-control-input > div > input",
       "kekkei16102002@gmail.com"
     );
     await page.type(
-      "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div:nth-child(2) > div > div > div.ant-col.ant-form-item-control.css-dev-only-do-not-override-3rel02 > div.ant-form-item-control-input > div > span > input",
+      "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div:nth-child(2) > div > div > div.ant-col.ant-form-item-control > div.ant-form-item-control-input > div > span > input",
       "kekkei1610"
     );
     await page.click(
