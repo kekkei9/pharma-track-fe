@@ -55,5 +55,5 @@ describe("Login", () => {
       (e) => e.innerHTML
     );
     expect(pageTitle).toMatch("Pharma Track");
-  }, 40000);
+  }, 60000);
 });

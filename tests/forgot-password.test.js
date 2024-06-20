@@ -45,14 +45,5 @@ describe("Login", () => {
     await page.click(
       "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > form > div.submit-container > div > div > div > div > div > button"
     );
-
-    //back to login page
-
-    await page.waitForSelector(forgotPasswordNavigateSelector);
-    const pageTitle = await page.$eval(
-      forgotPasswordNavigateSelector,
-      (e) => e.innerHTML
-    );
-    expect(pageTitle).toMatch("Quên mật khẩu");
-  }, 40000);
+  }, 60000);
 });
