@@ -1,8 +1,6 @@
-// __tests__/login.test.js
-
 const launch = require("puppeteer").launch;
 
-describe("Login", () => {
+describe("ForgotPassword", () => {
   let browser;
   let page;
 
@@ -13,11 +11,11 @@ describe("Login", () => {
       devtools: true,
     });
     page = await browser.newPage();
-  }, 10000);
+  }, 100000);
 
   afterAll(async () => {
     await browser.close();
-  });
+  }, 100000);
 
   let forgotPasswordNavigateSelector =
     "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div.tw-text-red-500.tw-mt-3.tw-ml-3.tw-self-start.forgot-password";

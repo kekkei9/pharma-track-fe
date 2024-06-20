@@ -44,7 +44,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "jest --maxWorkers=1",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },

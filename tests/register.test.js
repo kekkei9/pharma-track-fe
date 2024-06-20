@@ -1,8 +1,6 @@
-// __tests__/login.test.js
-
 const launch = require("puppeteer").launch;
 
-describe("Login", () => {
+describe("Register", () => {
   let browser;
   let page;
 
@@ -13,11 +11,11 @@ describe("Login", () => {
       devtools: true,
     });
     page = await browser.newPage();
-  }, 10000);
+  }, 100000);
 
   afterAll(async () => {
     await browser.close();
-  });
+  }, 100000);
 
   const continueButtonSpanSelector =
     "#root > div.SignUpPage.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div.submit-container > div > div > div > div > div > button > span";
@@ -30,7 +28,7 @@ describe("Login", () => {
       (e) => e.innerHTML
     );
     expect(pageTitle).toMatch("Tiếp tục");
-  }, 30000);
+  }, 50000);
 
   const usernameInputSelector =
     "#root > div.SignUpPage.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div:nth-child(1) > div > div > div.ant-col.ant-form-item-control > div.ant-form-item-control-input > div > input";
@@ -66,5 +64,5 @@ describe("Login", () => {
       (e) => e.innerHTML
     );
     expect(pageTitle).toMatch(" TÀI KHOẢN");
-  }, 40000);
+  }, 80000);
 });

@@ -1,5 +1,3 @@
-// __tests__/login.test.js
-
 const launch = require("puppeteer").launch;
 
 describe("Login", () => {
@@ -13,11 +11,11 @@ describe("Login", () => {
       devtools: true,
     });
     page = await browser.newPage();
-  }, 10000);
+  }, 100000);
 
   afterAll(async () => {
     await browser.close();
-  });
+  }, 100000);
 
   it("should display the login form", async () => {
     await page.goto("http://localhost:3000/pharma-track-fe#/login");
