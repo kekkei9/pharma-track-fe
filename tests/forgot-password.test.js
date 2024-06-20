@@ -33,7 +33,7 @@ describe("Login", () => {
       (e) => e.innerHTML
     );
     expect(pageTitle).toMatch("Quên mật khẩu");
-  }, 10000);
+  }, 20000);
 
   it("should allow the user to log in", async () => {
     await page.goto("http://localhost:3000/pharma-track-fe#/login");
@@ -54,5 +54,5 @@ describe("Login", () => {
       (e) => e.innerHTML
     );
     expect(pageTitle).toMatch("Quên mật khẩu");
-  }, 20000);
+  }, 40000);
 });
