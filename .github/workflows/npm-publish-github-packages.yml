@@ -29,11 +29,6 @@ jobs:
       with:
           cmd: --frozen-lockfile install
 
-    - name: Install puppeteer libraries
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libgbm1
-
     - name: Build
       run: npm run build
       env: 
@@ -44,6 +39,8 @@ jobs:
         npm run start &       
         sleep 5 &&
         curl http://localhost:3000 -I &
+        sudo apt-get update
+        sudo apt-get install -y libgbm1 &
         npm run test
         
     # deploy the react app to github pages
