@@ -40,7 +40,7 @@ describe("Login", () => {
     await page.waitForSelector(forgotPasswordNavigateSelector);
     await page.click(forgotPasswordNavigateSelector);
 
-    await page.type(emailInputSelector, "kekkei16102002@gmail.com");
+    await page.type(emailInputSelector, "test@gmail.com");
 
     await page.click(
       "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > form > div.submit-container > div > div > div > div > div > button"
