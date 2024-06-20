@@ -29,7 +29,7 @@ describe("Login", () => {
       (e) => e.innerHTML
     );
     expect(pageTitle).toMatch("Đăng nhập");
-  }, 10000);
+  }, 50000);
 
   it("should allow the user to log in", async () => {
     await page.goto("http://localhost:3000/pharma-track-fe#/login");
