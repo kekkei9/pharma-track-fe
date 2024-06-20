@@ -41,7 +41,9 @@ jobs:
         
     - name: Run and test app
       run: |
-        npm run start &
+        npm run start &       
+        sleep 5 &&
+        curl http://localhost:port -I &
         npm run test
         
     # deploy the react app to github pages
