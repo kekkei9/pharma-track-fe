@@ -26,7 +26,7 @@ describe("Login", () => {
     "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > form > div.field-container > div > div > div.ant-col.ant-form-item-control > div.ant-form-item-control-input > div > input";
 
   it("should display forgot password button", async () => {
-    await page.goto("https://kekkei9.github.io/pharma-track-fe/#/login");
+    await page.goto("http://localhost:3000/pharma-track-fe/login");
     await page.waitForSelector(forgotPasswordNavigateSelector);
     const pageTitle = await page.$eval(
       forgotPasswordNavigateSelector,
@@ -36,7 +36,7 @@ describe("Login", () => {
   }, 10000);
 
   it("should allow the user to log in", async () => {
-    await page.goto("https://kekkei9.github.io/pharma-track-fe/#/login");
+    await page.goto("http://localhost:3000/pharma-track-fe/login");
     await page.waitForSelector(forgotPasswordNavigateSelector);
     await page.click(forgotPasswordNavigateSelector);
 
