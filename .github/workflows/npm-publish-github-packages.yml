@@ -33,17 +33,17 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y libgbm1
-        
-    - name: Run and test app
-      run: |
-        npm run start &
-        npm run test
 
     - name: Build
       run: npm run build
       env: 
         CI: false
-
+        
+    - name: Run and test app
+      run: |
+        npm run start &
+        npm run test
+        
     # deploy the react app to github pages
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
