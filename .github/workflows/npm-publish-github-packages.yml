@@ -37,7 +37,7 @@ jobs:
     - name: Run and test app
       run: |
         npm run start &       
-        sleep 5 &&
+        sleep 5 &
         curl http://localhost:3000 -I &
         sudo apt-get update
         sudo apt-get install -y libgbm1 &
