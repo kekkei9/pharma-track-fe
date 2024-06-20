@@ -29,6 +29,16 @@ jobs:
       with:
           cmd: --frozen-lockfile install
 
+    - name: Install puppeteer libraries
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libgbm1
+        
+    - name: Run and test app
+      run: |
+        npm run start &
+        npm run test
+
     - name: Build
       run: npm run build
       env: 
@@ -42,14 +52,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build # directory to deploy
 
-    - name: Install puppeteer libraries
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libgbm1
-        
-    - name: Run and test app
-      run: |
-        npm run start &
-        npm run test
+
 
     
