@@ -60,7 +60,7 @@ const LoginForm = ({
               }}
               htmlType="submit"
             >
-              Đăng nhập
+              Đăng nhật
             </Button>
           </FormItem>
         </div>
