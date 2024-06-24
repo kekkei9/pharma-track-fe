@@ -25,7 +25,7 @@ const HomePageMain = (props) => {
         <div className="tw-ml-36">
           <div className="tw-font-bold tw-text-6xl tw-text-blue-600">
             {" "}
-            Pharma Track
+            Pharma Track1
           </div>
           <div className="tw-font-normal tw-text-5xl tw-text-black tw-text-truncate tw-mt-7">
             {" "}
