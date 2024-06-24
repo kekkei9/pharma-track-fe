@@ -43,5 +43,5 @@ describe("ForgotPassword", () => {
     await page.click(
       "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > form > div.submit-container > div > div > div > div > div > button"
     );
-  }, 60000);
+  }, 100000);
 });

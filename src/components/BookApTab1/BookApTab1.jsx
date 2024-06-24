@@ -64,7 +64,7 @@ const BookApTab1 = (props) => {
           Fetch("GET", "https://pharma-track-be.onrender.com/api/v1/staff"),
         ]);
         const filteredDoctorList = responseStaff.filter((item) => {
-          return item.type === "Bác sĩ";
+          return item.type === "doctor";
         });
         setInitDoctorData(
           filteredDoctorList.map((doctor) => ({
