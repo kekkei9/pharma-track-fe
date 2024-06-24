@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pharma-track-fe/static/css/main.2016e72d.css",
-    "main.js": "/pharma-track-fe/static/js/main.7472bfec.js",
+    "main.js": "/pharma-track-fe/static/js/main.14bef3e1.js",
     "static/js/453.9c701c37.chunk.js": "/pharma-track-fe/static/js/453.9c701c37.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/pharma-track-fe/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fa-solid-900.ttf": "/pharma-track-fe/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
@@ -22,11 +22,11 @@
     "static/media/fa-v4compatibility.woff2": "/pharma-track-fe/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/pharma-track-fe/index.html",
     "main.2016e72d.css.map": "/pharma-track-fe/static/css/main.2016e72d.css.map",
-    "main.7472bfec.js.map": "/pharma-track-fe/static/js/main.7472bfec.js.map",
+    "main.14bef3e1.js.map": "/pharma-track-fe/static/js/main.14bef3e1.js.map",
     "453.9c701c37.chunk.js.map": "/pharma-track-fe/static/js/453.9c701c37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2016e72d.css",
-    "static/js/main.7472bfec.js"
+    "static/js/main.14bef3e1.js"
   ]
 }
