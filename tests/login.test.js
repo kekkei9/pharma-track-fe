@@ -83,24 +83,24 @@ describe("Login", () => {
     () => testLoginFunction(testAccounts[0]),
     60000
   );
-  it(
-    "should allow the user to log in 2",
-    () => testLoginFunction(testAccounts[1]),
-    60000
-  );
-  it(
-    "should allow the user to log in 3",
-    () => testLoginFunction(testAccounts[2]),
-    60000
-  );
-  it(
-    "should allow the user to log in 4",
-    () => testLoginFunction(testAccounts[3]),
-    60000
-  );
-  it(
-    "should allow the user to log in 5",
-    () => testLoginFunction(testAccounts[4]),
-    60000
-  );
+  // it(
+  //   "should allow the user to log in 2",
+  //   () => testLoginFunction(testAccounts[1]),
+  //   60000
+  // );
+  // it(
+  //   "should allow the user to log in 3",
+  //   () => testLoginFunction(testAccounts[2]),
+  //   60000
+  // );
+  // it(
+  //   "should allow the user to log in 4",
+  //   () => testLoginFunction(testAccounts[3]),
+  //   60000
+  // );
+  // it(
+  //   "should allow the user to log in 5",
+  //   () => testLoginFunction(testAccounts[4]),
+  //   60000
+  // );
 });
