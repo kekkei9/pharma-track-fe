@@ -52,7 +52,7 @@ describe("Login", () => {
     expect(pageTitle).toMatch("Đăng nhập");
   }, 30000);
 
-  const testLoginFunction = async (email, password) => {
+  const testLoginFunction = async ({ email, password }) => {
     await page.goto("http://localhost:3000/pharma-track-fe#/login");
     await page.waitForSelector(
       "#root > div.LoginPage.tw-flex.tw-flex-col.tw-items-center > div > div.login-action-container.tw-flex.tw-flex-col.tw-items-center > div.LoginFormContainer > div > form > div:nth-child(1) > div > div > div.ant-col.ant-form-item-control > div.ant-form-item-control-input > div > input"
